@@ -4,68 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Navigation bar</title>
 
     <style>
-        * {
-            margin: 0px;
-            font-family: 'Times New Roman';
-            border: border-box;
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
         }
 
         .navbar {
-            height: 60px;
-            width: 100%;
-            background-color: rgb(62, 62, 62);
-            color: white;
-            position: fixed;
-            display: flex;
-            align-items: center;
-        }
-
-        .options {
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 20px;
+            overflow: hidden;
+            background-color: #4c4c4c;
             border-radius: 10px;
         }
 
-        .nav {
-            margin: 15px;
-            justify-content: space-evenly;
+        .navbar a {
+            float: left;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: rgb(0, 0, 0);
+            border-radius: 10px;
         }
 
         .name {
             background-color: black;
-            padding: 15px;
-            margin: 15px;
-            border-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
         }
 
-        .nav:hover {
-            background-color: rgb(9, 9, 9);
-            padding: 8px;
-            font-size: 21px;
-            border-radius: 10px;
+        a {
+            float: none;
+            color: white;
+            padding: 16px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        a:hover {
+            background-color: #444;
+
+        }
+
+        @media screen and (max-width: 600px) {
+            .navbar a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+
+            .navbar {
+                overflow: hidden;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div class="navbar">
-        <div class="options">
-            <a class="name"> MR. VIJAY SONAVANE</a>
-            <a class="nav"> Home</a>
-            <a class="nav">AKP Issues</a>
-            <a class="nav">PNC Issues</a>
-            <a class="nav"> Education and Experience</a>
-            <a class="nav"> International Visits and Presentations</a>
-            <a class="nav">Invited Talks</a>
-            <a class="nav"> Publications</a>
-        </div>
 
+    <div class="navbar">
+        <a class="name" href=""> MR. VIJAY SONAVANE</a>
+        <a href="">Home</a>
+        <a href="">AKP Issues</a>
+        <a href="">PNC Issues</a>
+        <a href=""> Education and Experience</a>
+        <a href="">International Visits and Presentations</a>
+        <a href="">Invited Talks</a>
+        <a href="">Publications</a>
     </div>
 
-
 </body>
+
+</html>
 
 </html>
