@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nav-bar</title>
 
     <style>
         * {
             margin: 0px;
             font-family: 'Times New Roman';
             border: border-box;
+            list-style: none;
         }
 
         .navbar {
@@ -21,35 +22,33 @@
             position: fixed;
             display: flex;
             align-items: center;
-            
-
-
         }
 
         .options {
             font-family: 'Times New Roman', Times, serif;
             font-size: 20px;
             border-radius: 10px;
-
-
         }
 
-        .nav {
-            margin: 15px;
+        li {
+            padding: 10px;
+            display: inline;
             justify-content: space-evenly;
+            text-decoration: none;
+            margin-left: 5px;
         }
 
         .name {
             background-color: black;
-            padding: 15px;
-            margin: 15px;
+            padding: 10px;
+            margin: 5px;
             border-radius: 10px;
+            text-align: left;
         }
 
         .nav:hover {
             background-color: rgb(9, 9, 9);
             padding: 8px;
-            font-size: 21px;
             border-radius: 10px;
         }
     </style>
@@ -57,20 +56,19 @@
 
 <body>
     <div class="navbar">
-        <div class="options">
+
+        <ul class="options">
             <a class="name"> MR. VIJAY SONAVANE</a>
-            <a class="nav"> Home</a>
-            <a class="nav">AKP Issues</a>
-            <a class="nav">PNC Issues</a>
-            <a class="nav"> Education and Experience</a>
-            <a class="nav"> International Visits and Presentations</a>
-            <a class="nav">Invited Talks</a>
-            <a class="nav"> Publications</a>
-        </div>
+            <li> <a class="nav"> Home</a> </li>
+            <li> <a class="nav">AKP Issues</a> </li>
+            <li> <a class="nav">PNC Issues</a> </li>
+            <li> <a class="nav"> Education and Experience</a> </li>
+            <li> <a class="nav"> International Visits and Presentations</a> </li>
+            <li> <a class="nav">Invited Talks</a> </li>
+            <li> <a class="nav"> Publications</a> </li>
+        </ul>
 
     </div>
-
-
 </body>
 
 </html>
