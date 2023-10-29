@@ -7,42 +7,95 @@
 
     <style>
         * {
-            margin: 0px;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
             background-color: rgb(225, 223, 223);
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0077b6;
+        }
+
+        header {
+            background-color: #393e46;
+            color: white;
+            padding: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            font-size: 25px;
+            margin-top: 10px;
+            padding: 15px;
+            background-color: white;
+        }
+
+        p {
+            font-size: 16px;
+            margin: 10px;
+            padding: 15px;
+            background-color: white;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin: 10px;
+        }
+
+        hr {
+            border: 1px solid #0077b6;
+            margin: 20px;
+        }
+
+        #book-image {
+            padding: 10px;
+        }
+
+        #author-image {
+            height: 500px;
+            margin: 20px;
         }
     </style>
+
 </head>
 
 <body>
-    <a href="./akp.html">AKP ISSUES</a>
-
-    <img src="./VLS_photo 5.jpg" alt="author image" height="250px" />
+    <header>
+        <a href="./akp.html" style="color: white;">AKP ISSUES</a>
+    </header>
+    <img id="author-image" src="./VLS_photo 5.jpg" alt="author image" style="height: 300px;" />
     <h1>MR. VIJAY SONAVANE</h1>
-
-
-    <p>In 2009 joined the prestigious post of Member, MERC (Maharashtra Electricity Regulatory
-        Commission).<br /> He has
-        worked on many special cases and has presented / published over 40 papers in <br /> various National and
-        International Conferences.</p>
-
-
-    <h3>Email: vlsonavane@gmail.com </h3>
+    <p>In 2009, he joined the prestigious post of Member, MERC (Maharashtra Electricity Regulatory Commission).<br /> He
+        has worked on many special cases and has presented/published over 40 papers in <br /> various national and
+        international conferences.</p>
+    <h3>Email: <a href="mailto:vlsonavane@gmail.com">vlsonavane@gmail.com</a></h3>
     <h3>Tel: +91 98333 62062</h3>
     <hr />
-
-    <a href="">UPCOMING TALKS AND PRESENTATION</a>
+    <a href="#">UPCOMING TALKS AND PRESENTATIONS</a>
+    <hr />
+    <a href="#">Recent Projects and Responsibilities</a>
     <hr />
 
-    <a href="">Recent Project and Responsibilities</a>
-    <hr />
+    <a id="book-image" href="https://www.amazon.in/ISGW-2017-Compendium-International-Engineering-ebook/dp/B07C3MFWDX"
+        alt="book image" height="300px">
 
-    <a href="https://www.amazon.in/ISGW-2017-Compendium-International-Engineering-ebook/dp/B07C3MFWDX"
-        alt="book image"><img src="./Compendium_VLS_Photo_test.png" /></a>
-    <hr />
 
-    <img src="./IMG-20211029-WA0006.jpg" alt="author image" />
+        <img src="./Compendium_VLS_Photo_test.png" alt="book image" height="300px" />
+    </a>
+
+    <img id="author-image" src="./IMG-20211029-WA0006.jpg" alt="author image" />
     <p>Mr. V. L. Sonavane with Dr. S. D. Varwandkar (Oct 2021)</p>
-    <hr />
 
 </body>
 
